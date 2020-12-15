@@ -373,6 +373,7 @@ cell AMX_NATIVE_CALL B_OnPlayerConnect(AMX *amx, cell *params)
 		return 1;
 	}
 
+	anticheat_on_player_connect(playerid);
 	class_on_player_connect(playerid);
 	chpw_on_player_connect(playerid);
 	echo_on_player_connection(playerid, ECHO_CONN_REASON_GAME_CONNECTED);
